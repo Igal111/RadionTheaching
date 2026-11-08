@@ -27,14 +27,16 @@ public class Intake {
             intake.setPower(1);
             right.setPower(1);
             left.setPower(1);
-        } else if (gamepad.b) {
+        }
+        else if (gamepad.b) {
             intake.setPower(-1);
             right.setPower(-1);
             left.setPower(-1);
-        } else {
+        }
+        else {
             intake.setPower(0);
             right.setPower(0);
             left.setPower(0);
         }
     }
-        }
+}

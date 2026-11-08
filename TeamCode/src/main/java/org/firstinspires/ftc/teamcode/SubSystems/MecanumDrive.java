@@ -50,8 +50,6 @@ public class MecanumDrive {
         double y;
         double x;
 
-
-
         if (Math.abs(gamepad.left_stick_y) > 0.05) {
             y = -gamepad.left_stick_y;
         }
