@@ -22,21 +22,21 @@ public class Intake {
         right.setDirection(DcMotorSimple.Direction.REVERSE);
     }
 
+    public void setPower(double power) {
+        intake.setPower(power);
+        right.setPower(power);
+        left.setPower(power);
+    }
+
     public void intake (Gamepad gamepad) {
         if (gamepad.a) {
-            intake.setPower(1);
-            right.setPower(1);
-            left.setPower(1);
+            setPower(1);
         }
         else if (gamepad.b) {
-            intake.setPower(-1);
-            right.setPower(-1);
-            left.setPower(-1);
+            setPower(-1);
         }
         else {
-            intake.setPower(0);
-            right.setPower(0);
-            left.setPower(0);
+            setPower(0);
         }
     }
 }
